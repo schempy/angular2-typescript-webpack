@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "filesGlob": [
+    "typings/**/*.ts",
+    "app/**/*.ts"
+  ],
+  "files": [
+    "typings/angular2/angular2.d.ts",
+    "typings/tsd.d.ts",
+    "app/app.component.ts",
+    "app/boot.ts",
+    "app/vendor.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
