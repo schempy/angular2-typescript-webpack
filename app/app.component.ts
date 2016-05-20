@@ -1,3 +1,5 @@
+/// <reference path="../typings/browser.d.ts" />
+
 import {Component} from '@angular/core';
 
 @Component({
