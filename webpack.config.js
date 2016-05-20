@@ -10,7 +10,7 @@ module.exports = {
     filename: "./dist/[name].bundle.js"
   },
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ['', '.ts', '.js']
   },
   devtool: 'source-map',
   module: {

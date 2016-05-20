@@ -1,25 +1,29 @@
 {
   "name": "angular2-typescript-webpack",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Angular 2, TypeScript and Webpack",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
   },
   "license": "ISC",
-  "devDependencies": {
-    "ts-loader": "^0.8.1",
-    "typescript": "^1.8.9",
-    "typings": "^0.7.12",
-    "webpack": "^1.3.0",
-    "webpack-dev-server": "^1.14.1"
-  },
   "dependencies": {
-    "angular2": "^2.0.0-beta.13",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.35.0",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "zone.js": "^0.6.6"
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+    "@angular/router-deprecated": "2.0.0-rc.1",
+    "reflect-metadata": "0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "0.6.12"
+  },
+  "devDependencies": {
+    "ts-loader": "0.8.2",
+    "typescript": "1.8.10",
+    "typings": "0.7.12",
+    "webpack": "1.13.0",
+    "webpack-dev-server": "1.14.1"
   }
 }
