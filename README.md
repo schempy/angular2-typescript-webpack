@@ -3,7 +3,6 @@
 ### Setup
 
 - npm install  
-- typings install  
 - npm start  
 - start browser with http://localhost:8080  
 
