@@ -3,7 +3,6 @@
   "version": "1.3.0",
   "description": "Angular 2, TypeScript and Webpack",
   "scripts": {
-    "postinstall": "typings install",
     "build": "webpack",
     "start": "webpack-dev-server --port 8081"
   },

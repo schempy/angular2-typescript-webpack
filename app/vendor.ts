@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import 'rxjs';
+import 'rxjs/Observable';
 import 'zone.js/dist/zone';
 
 import '@angular/common';
