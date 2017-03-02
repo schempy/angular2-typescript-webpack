@@ -3,7 +3,6 @@ var webpack = require("webpack"),
 
 const ccpOptions = {
   name: 'vendor',
-
   filename: './dist/vendor.bundle.js'
 };
 
@@ -21,7 +20,11 @@ module.exports = {
     filename: "./dist/[name].bundle.js"
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    modules: [
+      path.resolve('./app'),
+      'node_modules'
+    ]
   },
   devtool: 'source-map',
   module: {
@@ -42,6 +45,15 @@ module.exports = {
       /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
       root('./src'), // location of your src
       { }
-    )
+    ),
+
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true
+    })
   ]
 }
